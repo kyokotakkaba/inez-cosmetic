@@ -1,0 +1,45 @@
+[05-Aug-2020 10:48:00 Asia/Jakarta] PHP Warning:  mysqli_connect(): (08004/1040): Too many connections in /home/nzcmkcom/diklat/conf/function.php on line 26
+[05-Aug-2020 10:48:03 Asia/Jakarta] PHP Warning:  mysqli_connect(): (08004/1040): Too many connections in /home/nzcmkcom/diklat/conf/function.php on line 26
+[05-Aug-2020 10:48:16 Asia/Jakarta] PHP Warning:  mysqli_connect(): (08004/1040): Too many connections in /home/nzcmkcom/diklat/conf/function.php on line 26
+[05-Aug-2020 10:48:20 Asia/Jakarta] PHP Warning:  mysqli_connect(): (08004/1040): Too many connections in /home/nzcmkcom/diklat/conf/function.php on line 26
+[05-Aug-2020 10:50:54 Asia/Jakarta] PHP Warning:  mysqli_connect(): (08004/1040): Too many connections in /home/nzcmkcom/diklat/conf/function.php on line 26
+[05-Aug-2020 10:51:07 Asia/Jakarta] PHP Warning:  mysqli_connect(): (08004/1040): Too many connections in /home/nzcmkcom/diklat/conf/function.php on line 26
+[15-Oct-2020 15:55:47 Asia/Jakarta] PHP Notice:  Uninitialized string offset: 0 in /home/nzcmkcom/diklat/lib/core/head.php on line 43
+[04-Nov-2020 14:35:27 Asia/Jakarta] PHP Notice:  Uninitialized string offset: 0 in /home/nzcmkcom/diklat/lib/core/head.php on line 43
+[05-Jan-2021 22:29:49 Asia/Jakarta] PHP Warning:  mysqli_connect(): (08004/1040): Too many connections in /home/nzcmkcom/diklat/conf/function.php on line 26
+[05-Jan-2021 22:29:55 Asia/Jakarta] PHP Warning:  mysqli_connect(): (08004/1040): Too many connections in /home/nzcmkcom/diklat/conf/function.php on line 26
+[05-Jan-2021 22:30:29 Asia/Jakarta] PHP Warning:  mysqli_connect(): (HY000/1040): Too many connections in /home/nzcmkcom/diklat/conf/function.php on line 26
+[05-Jan-2021 22:31:35 Asia/Jakarta] PHP Warning:  mysqli_connect(): (08004/1040): Too many connections in /home/nzcmkcom/diklat/conf/function.php on line 26
+[05-Jan-2021 22:31:48 Asia/Jakarta] PHP Warning:  mysqli_connect(): (08004/1040): Too many connections in /home/nzcmkcom/diklat/conf/function.php on line 26
+[05-Jan-2021 22:31:57 Asia/Jakarta] PHP Warning:  mysqli_connect(): (08004/1040): Too many connections in /home/nzcmkcom/diklat/conf/function.php on line 26
+[05-Jan-2021 22:32:00 Asia/Jakarta] PHP Warning:  mysqli_connect(): (08004/1040): Too many connections in /home/nzcmkcom/diklat/conf/function.php on line 26
+[05-Jan-2021 22:32:04 Asia/Jakarta] PHP Warning:  mysqli_connect(): (08004/1040): Too many connections in /home/nzcmkcom/diklat/conf/function.php on line 26
+[05-Jan-2021 22:32:31 Asia/Jakarta] PHP Warning:  mysqli_connect(): (HY000/1040): Too many connections in /home/nzcmkcom/diklat/conf/function.php on line 26
+[05-Jan-2021 22:32:33 Asia/Jakarta] PHP Warning:  mysqli_connect(): (HY000/1040): Too many connections in /home/nzcmkcom/diklat/conf/function.php on line 26
+[05-Jan-2021 22:32:35 Asia/Jakarta] PHP Warning:  mysqli_connect(): (HY000/1040): Too many connections in /home/nzcmkcom/diklat/conf/function.php on line 26
+[05-Jan-2021 22:32:38 Asia/Jakarta] PHP Warning:  mysqli_connect(): (HY000/1040): Too many connections in /home/nzcmkcom/diklat/conf/function.php on line 26
+[05-Jan-2021 22:32:40 Asia/Jakarta] PHP Warning:  mysqli_connect(): (HY000/1040): Too many connections in /home/nzcmkcom/diklat/conf/function.php on line 26
+[05-Jan-2021 22:32:54 Asia/Jakarta] PHP Warning:  mysqli_connect(): (HY000/1040): Too many connections in /home/nzcmkcom/diklat/conf/function.php on line 26
+[05-Jan-2021 22:32:56 Asia/Jakarta] PHP Warning:  mysqli_connect(): (HY000/1040): Too many connections in /home/nzcmkcom/diklat/conf/function.php on line 26
+[05-Jan-2021 22:32:57 Asia/Jakarta] PHP Warning:  mysqli_connect(): (HY000/1040): Too many connections in /home/nzcmkcom/diklat/conf/function.php on line 26
+[05-Jan-2021 22:32:59 Asia/Jakarta] PHP Warning:  mysqli_connect(): (HY000/1040): Too many connections in /home/nzcmkcom/diklat/conf/function.php on line 26
+[05-Jan-2021 22:33:04 Asia/Jakarta] PHP Warning:  mysqli_connect(): (HY000/1040): Too many connections in /home/nzcmkcom/diklat/conf/function.php on line 26
+[05-Jan-2021 22:33:52 Asia/Jakarta] PHP Warning:  mysqli_connect(): (HY000/1040): Too many connections in /home/nzcmkcom/diklat/conf/function.php on line 26
+[05-Jan-2021 22:33:56 Asia/Jakarta] PHP Warning:  mysqli_connect(): (HY000/1040): Too many connections in /home/nzcmkcom/diklat/conf/function.php on line 26
+[05-Jan-2021 22:33:58 Asia/Jakarta] PHP Warning:  mysqli_connect(): (HY000/1040): Too many connections in /home/nzcmkcom/diklat/conf/function.php on line 26
+[05-Jan-2021 22:34:07 Asia/Jakarta] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/nzcmkcom/diklat/conf/function.php on line 26
+[05-Jan-2021 22:34:08 Asia/Jakarta] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/nzcmkcom/diklat/conf/function.php on line 26
+[05-Jan-2021 22:34:10 Asia/Jakarta] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/nzcmkcom/diklat/conf/function.php on line 26
+[05-Jan-2021 22:34:12 Asia/Jakarta] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/nzcmkcom/diklat/conf/function.php on line 26
+[05-Jan-2021 22:34:20 Asia/Jakarta] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/nzcmkcom/diklat/conf/function.php on line 26
+[05-Jan-2021 22:34:34 Asia/Jakarta] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/nzcmkcom/diklat/conf/function.php on line 26
+[05-Jan-2021 22:34:40 Asia/Jakarta] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/nzcmkcom/diklat/conf/function.php on line 26
+[05-Jan-2021 22:34:42 Asia/Jakarta] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/nzcmkcom/diklat/conf/function.php on line 26
+[05-Jan-2021 22:34:43 Asia/Jakarta] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/nzcmkcom/diklat/conf/function.php on line 26
+[05-Jan-2021 22:34:49 Asia/Jakarta] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/nzcmkcom/diklat/conf/function.php on line 26
+[05-Jan-2021 22:34:50 Asia/Jakarta] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/nzcmkcom/diklat/conf/function.php on line 26
+[05-Jan-2021 22:35:01 Asia/Jakarta] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/nzcmkcom/diklat/conf/function.php on line 26
+[05-Jan-2021 22:35:02 Asia/Jakarta] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/nzcmkcom/diklat/conf/function.php on line 26
+[05-Jan-2021 22:35:04 Asia/Jakarta] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/nzcmkcom/diklat/conf/function.php on line 26
+[05-Jan-2021 22:35:07 Asia/Jakarta] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/nzcmkcom/diklat/conf/function.php on line 26
+[05-Jan-2021 22:52:23 Asia/Jakarta] PHP Warning:  mysqli_connect(): (HY000/1040): Too many connections in /home/nzcmkcom/diklat/conf/function.php on line 26

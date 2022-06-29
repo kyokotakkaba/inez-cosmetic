@@ -1,0 +1,1 @@
+[05-Aug-2020 10:41:46 Asia/Jakarta] PHP Warning:  mysqli_connect(): (08004/1040): Too many connections in /home/nzcmkcom/diklat/conf/function.php on line 26

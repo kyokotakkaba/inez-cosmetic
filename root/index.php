@@ -155,36 +155,47 @@
                                 <?php echo $namaPengguna; ?>
                             </div>
                         </div>
-                        <a class="item set" onclick="pilihMenu('set')">
-                            Setting <i class="setting icon"></i>
-                        </a>
-                        <a class="item employee" onclick="pilihMenu('employee')">
-                            Data BA/ BC <i class="users icon"></i>
-                        </a>
-                        <a class="item train" onclick="pilihMenu('train')">
-                            Pelatihan <i class="address book icon"></i>
-                        </a>
-                        <a href="../filemanager/" class="item" target="_blank">
-                            File Manager <i class="open folder icon"></i>
-                        </a>
-                        <a class="item kuri" onclick="pilihMenu('kuri')">
-                            Materi <i class="tags icon"></i>
-                        </a>
-                        <a class="item bank" onclick="pilihMenu('bank')">
-                            Bank Soal <i class="box icon"></i>
-                        </a>
-                        <a class="item test" onclick="pilihMenu('test')">
-                            Ujian <i class="calendar outline alternate icon"></i>
-                        </a>
-                        <a class="item qa" onclick="pilihMenu('qa')">
-                            Q & A <i class="comments icon"></i>
-                        </a>
-                        <a class="item questionnaire" onclick="pilihMenu('questionnaire')">
-                            Survey <i class="chart bar icon"></i>
-                        </a>
-                        <a class="item report" onclick="pilihMenu('report')">
-                            Laporan <i class="print icon"></i>
-                        </a>
+                        <?php 
+                        if(substr($_SESSION['idPengguna'],0,3)=="X-0"){
+                            $_SESSION['menu'] = 'kuri';
+                        ?>
+                            <a class="item kuri" onclick="pilihMenu('kuri')">
+                                Materi <i class="tags icon"></i>
+                            </a>
+                        <?php
+                        }else{
+                        ?>
+                            <a class="item set" onclick="pilihMenu('set')">
+                                Setting <i class="setting icon"></i>
+                            </a>
+                            <a class="item employee" onclick="pilihMenu('employee')">
+                                Data BA/ BC <i class="users icon"></i>
+                            </a> 
+                            <a class="item train" onclick="pilihMenu('train')">
+                                Pelatihan <i class="address book icon"></i>
+                            </a>
+                            <a href="../filemanager/" class="item" target="_blank">
+                                File Manager <i class="open folder icon"></i>
+                            </a>
+                            <a class="item kuri" onclick="pilihMenu('kuri')">
+                                Materi <i class="tags icon"></i>
+                            </a>
+                            <a class="item bank" onclick="pilihMenu('bank')">
+                                Bank Soal <i class="box icon"></i>
+                            </a>
+                            <a class="item test" onclick="pilihMenu('test')">
+                                Ujian <i class="calendar outline alternate icon"></i>
+                            </a>
+                            <a class="item qa" onclick="pilihMenu('qa')">
+                                Q & A <i class="comments icon"></i>
+                            </a>
+                            <a class="item questionnaire" onclick="pilihMenu('questionnaire')">
+                                Survey <i class="chart bar icon"></i>
+                            </a>
+                            <a class="item report" onclick="pilihMenu('report')">
+                                Laporan <i class="print icon"></i>
+                            </a>
+                        <?php } ?>
                     </div>
                 </div>
 

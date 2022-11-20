@@ -334,11 +334,12 @@
                         '$mulai'
                     )
     ";
+    
     $e = mysqli_query($conn, $q);
     if(!$e){
 ?>
         <script type="text/javascript">
-            tampilkanPesan('0','Terjadi kesalahan saat memproses data.');
+            tampilkanPesan('0',"Terjadi kesalahan saat memproses data.");
         </script>
 <?php                                        
         exit();        
@@ -631,7 +632,7 @@
     if(!$e){
 ?>
         <script type="text/javascript">
-            tampilkanPesan('0', 'Terjadi kesalahan saat memproses random jawaban.');
+            tampilkanPesan('0', "Terjadi kesalahan saat memproses random jawaban.");
         </script>
 <?php        
         exit();
@@ -660,7 +661,7 @@
 ?>
 
 <script type="text/javascript">
-    tampilkanPesan('1', 'Sesi ujian berhasil dibuat. Laman akan dimuat ulang.');
+    tampilkanPesan('1', "Sesi ujian berhasil dibuat. Laman akan dimuat ulang.");
     setTimeout(function () {
         window.location.reload(true);
     }, 1000);

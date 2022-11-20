@@ -31,6 +31,9 @@
 </h2>
 <div id="dataDisplay">
     <div class="ui styled fluid accordion">
+    <?php 
+        if(substr($_SESSION['idPengguna'],0,3)!="X-0"){
+        ?>
         <div class="title">
             <i class="dropdown icon"></i> Kelompok materi 
         </div>
@@ -41,6 +44,7 @@
             </div>
         </div>
 
+        <?php }?>
 
 
         <div class="title active">
@@ -48,17 +52,24 @@
         </div>
         <div class="content active">
             <div class="ui basic vertical segment clearing" style="margin: 0px; padding-bottom: 0px;">
+                <?php if(substr($_SESSION['idPengguna'],0,3)!="X-0"){?>
                 <div class="ui icon button right floated" onclick="updateRow()" data-content="Reload">
                     <i class="redo icon"></i>
                 </div>
                 <div class="ui icon button green right floated" onclick="loadForm('kuri-bahasan','0')">
                     <i class="plus icon"></i> Bahasan
                 </div>
-
+                
                 <div class="ui icon input">
                     <input id="searchData" placeholder="Cari Data.." type="text" onkeyup="cariData()" />
                     <i class="search icon"></i>
                 </div>
+                <?php }else{?>
+                <div class="ui icon input " style="display:none;">
+                    <input id="searchData" placeholder="Cari Data.." type="text" onkeyup="cariData()" />
+                    <i class="search icon"></i>
+                </div>
+                <?php }?>
             </div>
             <table class="ui striped selectable table">
                 <thead>

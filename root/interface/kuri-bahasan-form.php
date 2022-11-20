@@ -137,22 +137,23 @@
     $('.button').popup();
     $('.dropdown').dropdown();
     $('#frmBahasan').submit(function(e){
-        $judul= $('#nama').val();
+        <?php
         $judulNotif = 'Penambahan materi belajar baru';
-        $isiNotif = 'Pihak pengelola menambahkan materi belajar BARU yang berjudul '+$judul+'.';
+        $isiNotif = 'Pihak pengelola menambahkan materi belajar baru.';
         $untukNotif = 'all';
         sendNotif($judulNotif, $isiNotif, $untukNotif);
+        ?>
         e.preventDefault();
-        // loadingMulai();
-        // $.ajax({
-        //     type:'post',
-        //     async:true,
-        //     data:$('#frmBahasan').serialize(),
-        //     url:'interface/kuri-bahasan-form-process.php',
-        //     success: function(data){
-        //         $('#feedBack').html(data);
-        //         loadingSelesai();
-        //     }
-        // })
+        loadingMulai();
+        $.ajax({
+            type:'post',
+            async:true,
+            data:$('#frmBahasan').serialize(),
+            url:'interface/kuri-bahasan-form-process.php',
+            success: function(data){
+                $('#feedBack').html(data);
+                loadingSelesai();
+            }
+        })
     })
 </script>

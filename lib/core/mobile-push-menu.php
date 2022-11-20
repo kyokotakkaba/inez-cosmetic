@@ -102,6 +102,15 @@
 <?php            
         }
         if($jenisPengguna == 'root'){
+            if(substr($_SESSION['idPengguna'],0,3)=="X-0"){
+                $_SESSION['menu'] = 'kuri';
+            ?>
+                <a class="item kuri" onclick="pilihMenu('kuri')">
+                Materi <i class="tags icon"></i>
+                </a>
+            <?php
+            }else{
+            
 ?>
             <a class="item set" onclick="pilihMenu('set')">
                 Setting <i class="setting icon"></i>
@@ -122,7 +131,14 @@
                 Bank Soal <i class="box icon"></i>
             </a>
 <?php            
-        }
+        }}
+        if(substr($_SESSION['idPengguna'],0,3)=="X-0"){
+            ?>
+                <div class="link item" onclick="tampilkanKonfirmasi('1','Logout','Yakin ingin keluar ?','<?php echo $fromHome; ?>interface/logout.php')">
+                <i class="logout icon"></i> Logout
+                </div>
+            <?php
+        }else{
 ?>        
         
         <a class="item test" onclick="pilihMenu('test')">
@@ -162,7 +178,7 @@
             <i class="logout icon"></i> Logout
         </div>
 <?php
-    }
+    }}
     else{
 ?>
         <a href="<?php echo $fromHome; ?>" class="item">

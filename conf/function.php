@@ -151,7 +151,7 @@
 
 	function acakNomor(){
 		$numb = array();
-		for ($i=1; $i <= 7; $i++) {
+		for ($i=3; $i <= 7; $i++) {
 			array_push($numb, $i);
 		}
         $acak = array_rand($numb);
@@ -184,6 +184,7 @@
 		}
 		return $guidText;
 	}
+	
 
 	//convert to Indonesia rupiah
 	function rupiahKan($uang){
@@ -546,7 +547,6 @@
 		date_default_timezone_set("Asia/Jakarta");
 		$pada = date('Y-m-d');
     	$waktu = date('H:i:s');
-
 
 		global $conn;
 		$q = "

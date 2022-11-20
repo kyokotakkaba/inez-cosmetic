@@ -489,7 +489,7 @@
         <div class="field essay" <?php if($jenis=='mchoice'){ ?> style="display: none;" <?php } ?> >
             <input type="hidden" name="idJawabanEssay" value="<?php echo $idJawabanEssay; ?>">
             <label>Jawaban</label>
-            <input type="text" id="jawaban" name="jawaban" maxlength="64" placeholder="Jawaban" value="<?php echo $jawaban; ?>" >
+            <input type="text" id="jawaban" name="jawaban" maxlength="999" placeholder="Jawaban" value="<?php echo $jawaban; ?>" >
         </div>
     </div>
 

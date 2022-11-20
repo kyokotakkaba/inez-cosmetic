@@ -21,6 +21,7 @@
 	$cari 	= saring($_POST['cari']);
 
 	if(is_numeric($start) AND is_numeric($limit)){
+        if(substr($_SESSION['idPengguna'],0,3)!="X-0"){
 		$q="
 			SELECT 
 				b.id idB,
@@ -55,6 +56,44 @@
             WHERE
                 b.hapus = '0'
 		";
+    }else{
+        $q="
+			SELECT 
+				b.id idB,
+				b.id_kelompok idK, 
+				b.no, 
+				b.nama namaB, 
+				b.deskripsi,
+
+				k.nama namaK,
+
+                (
+                    SELECT
+                        COUNT(id)
+
+                    FROM
+                        materi
+
+                    WHERE
+                        id_bahasan = b.id
+                    AND
+                        hapus = '0'
+                ) jmlMateri
+
+            FROM
+            	materi_kelompok_bahasan b
+
+            LEFT JOIN
+            	materi_kelompok k
+            ON
+            	b.id_kelompok = k.id
+
+            WHERE
+                b.hapus = '0'
+            AND
+                b.id = '069F6B-9768A'
+		";
+    }
 
 		if($cari!==''){
 			$q.="
@@ -202,9 +241,11 @@
 					<div class="ui icon button" data-content="Edit" onclick="loadForm('kuri-bahasan','<?php echo $idB; ?>')">
 	                    <i class="pencil alternate icon"></i>
 	                </div>
+                    <?php if(substr($_SESSION['idPengguna'],0,3)!="X-0"){?>
 	                <div class="ui icon button red" data-content="Hapus" onclick="tampilkanKonfirmasi('<?php echo $idB; ?>','Hapus data','Yakin ingin menghapus data bahasan ? <br><br><br>Data materi dan riwayat belajar karyawan terkait akan dihapus','interface/kuri-bahasan-delete.php')">
 	                    <i class="trash alternate icon"></i>
 	                </div>
+                    <?php }?>
 				</td>
 			</tr>
 <?php    

@@ -54,10 +54,6 @@
     $sub = $r['namaB'];
     $idK = $r['id_kelompok'];
 
-
-
-
-
     $ar = array();
     $r = array();
 
@@ -354,8 +350,6 @@
         <div class="ui horizontal divider">
             <i class="book icon"></i> Materi
         </div>
-
-
         <div class="field">
             <label>Judul</label>
             <div class="ui input">
@@ -397,7 +391,70 @@
         <div class="ui horizontal divider">
             <i class="file pdf icon"></i> Lampiran
         </div>
-
+        <?php 
+            if($_SESSION['idPengguna']=="X-001X"){
+            ?>
+            <div class="two fields">
+                <div class="field">
+                    <label>Materi 1</label>
+                    <div class="ui action fluid input">
+                        <input type="text" id="buku1" name="buku1" readonly="readonly" placeholder="Pilih file" value="<?php echo $buku1; ?>">
+                        <a id="pilihBuku1" class="ui icon button" type="button" href="../filemanager/dialog.php?extension=['pdf']&field_id=buku1&relative_url=0&akey=key&fldr=Departemen%20A%2F&6388b56b46cfd">
+                            <i class="open folder icon"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="field">
+                    <label>Materi 2</label>
+                    <div class="ui action fluid input">
+                        <input type="text" id="buku2" name="buku2" readonly="readonly" placeholder="Pilih file" value="<?php echo $buku2; ?>">
+                        <a id="pilihBuku2" class="ui icon button" type="button" href="../filemanager/dialog.php?extension=['pdf']&field_id=buku2&relative_url=0&akey=key&fldr=Departemen%20A%2F&6388b56b46cfd">
+                            <i class="open folder icon"></i>
+                        </a>
+                    </div>
+                </div>    
+            </div>
+            <div class="field">
+                <label>Lampiran</label>
+                <div class="ui action fluid input">
+                    <input type="text" id="lampiran" name="lampiran" readonly="readonly" placeholder="Pilih file" value="<?php echo $lampiran; ?>">
+                    <a id="pilihLampiran" class="ui icon button" type="button" href="../filemanager/dialog.php?extension=['zip']&field_id=lampiran&relative_url=0&akey=key&fldr=Departemen%20A%2F&6388b56b46cfd">
+                        <i class="open folder icon"></i>
+                    </a>
+                </div>
+            </div>
+            <?php
+            }if($_SESSION['idPengguna']=="X-002X"){?>
+            <div class="two fields">
+                <div class="field">
+                    <label>Materi 1</label>
+                    <div class="ui action fluid input">
+                        <input type="text" id="buku1" name="buku1" readonly="readonly" placeholder="Pilih file" value="<?php echo $buku1; ?>">
+                        <a id="pilihBuku1" class="ui icon button" type="button" href="../filemanager/dialog.php?extension=['pdf']&field_id=buku1&relative_url=0&akey=key&fldr=Departemen%20B%2F&6388b56b46cfd">
+                            <i class="open folder icon"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="field">
+                    <label>Materi 2</label>
+                    <div class="ui action fluid input">
+                        <input type="text" id="buku2" name="buku2" readonly="readonly" placeholder="Pilih file" value="<?php echo $buku2; ?>">
+                        <a id="pilihBuku2" class="ui icon button" type="button" href="../filemanager/dialog.php?extension=['pdf']&field_id=buku2&relative_url=0&akey=key&fldr=Departemen%20B%2F&6388b56b46cfd">
+                            <i class="open folder icon"></i>
+                        </a>
+                    </div>
+                </div>    
+            </div>
+            <div class="field">
+                <label>Lampiran</label>
+                <div class="ui action fluid input">
+                    <input type="text" id="lampiran" name="lampiran" readonly="readonly" placeholder="Pilih file" value="<?php echo $lampiran; ?>">
+                    <a id="pilihLampiran" class="ui icon button" type="button" href="../filemanager/dialog.php?extension=['zip']&field_id=lampiran&relative_url=0&akey=key&fldr=Departemen%20B%2F&6388b56b46cfd">
+                        <i class="open folder icon"></i>
+                    </a>
+                </div>
+            </div>
+            <?php}($_SESSION['idPengguna']!="X-001X"&&$_SESSION['idPengguna']!="X-002X"){?>
         <div class="two fields">
             <div class="field">
                 <label>Materi 1</label>
@@ -428,6 +485,7 @@
                 </a>
             </div>
         </div>    
+        <?php}?>
     </div>
 
     <div class="ui green segment">

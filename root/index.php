@@ -195,6 +195,9 @@
                             <a class="item report" onclick="pilihMenu('report')">
                                 Laporan <i class="print icon"></i>
                             </a>
+                            <a class="item report" onclick="pilihMenu('rekap-user')">
+                                Rekap User <i class="print icon"></i>
+                            </a>
                         <?php } ?>
                     </div>
                 </div>

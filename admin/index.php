@@ -169,6 +169,9 @@
                         <a class="item questionnaire" onclick="pilihMenu('questionnaire')">
                             Survey <i class="chart bar icon"></i>
                         </a>
+                        <a class="item questionnaire" onclick="pilihMenu('rekap-user')">
+                            Rekap User <i class="chart bar icon"></i>
+                        </a>
                     </div>
                 </div>
 

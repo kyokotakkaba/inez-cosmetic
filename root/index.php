@@ -198,6 +198,9 @@
                             <a class="item report" onclick="pilihMenu('rekap-user')">
                                 Rekap User <i class="print icon"></i>
                             </a>
+                            <a class="item report" onclick="pilihMenu('sinkron')">
+                                Sinkronisasi <i class="print icon"></i>
+                            </a>
                         <?php } ?>
                     </div>
                 </div>

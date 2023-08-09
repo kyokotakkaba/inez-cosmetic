@@ -42,9 +42,16 @@
     <div class="ui icon button right floated" onclick="updateRow()" data-content="Reload">
             <i class="redo icon"></i>
         </div>
-        <div class="ui floating green button right floated" onclick="sync()">
+        <div class="ui floating blue button right floated" onclick="sync()">
             <span class="text">Sinkronisasi</span>
         </div>
+        <div class="ui floating green button right floated">
+            <a  data-content="Unduh Excel" href="report/pembelajaran/export/" target="_BLANK" style="color:white">
+                <i class="cloud download icon"></i>
+                <span>Export</span>
+            </a>    
+        </div>
+        
         
         <div class="ui icon input">
             <input id="searchData" placeholder="Cari Data.." type="text" onkeyup="cariData()" />
